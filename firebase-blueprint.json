@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "BancaForteStore": {
+      "title": "Banca Forte Store Document",
+      "description": "State documents stored in the main banca_forte_store collection, representing modular segments of the platform configuration, records, and statistics.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "object",
+          "description": "The main payload containing arrays or configuration dictionaries for predictions, users, settings, bingos, or notifications."
+        }
+      },
+      "required": ["value"]
+    }
+  },
+  "firestore": {
+    "/banca_forte_store/{documentId}": {
+      "schema": "BancaForteStore",
+      "description": "The primary administrative collection containing global data models (predictions, readySlips, users, notifications, finance, bingos, settings) synced securely from the server."
+    }
+  }
+}

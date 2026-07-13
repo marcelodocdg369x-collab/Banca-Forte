@@ -1,0 +1,6 @@
+{
+  "name": "Banca Forte",
+  "description": "Plataforma premium de palpites esportivos com análise de IA, bilhete do dia, estatísticas avançadas e painel administrativo completo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
